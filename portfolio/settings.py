@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+# Assign path where media files will be stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+# Assign name for URL where media files will be stored. It's only name, dose not change site's logic
 MEDIA_URL = '/media/'
