@@ -14,7 +14,7 @@ class Blog(models.Model):
         return self.text[:300]
 
     def pub_date_pretty(self):
-        return self.pub_date.strftime('%-H:%M %e %B')
+        return self.pub_date.strftime('%-H:%M, %e %B')
 
     def __str__(self):
         return self.title, self.pub_date
