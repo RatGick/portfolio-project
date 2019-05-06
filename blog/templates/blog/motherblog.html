@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load staticfiles %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -46,8 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="{% url 'motherblog' %}">Blog</a>
-                <a class="nav-item nav-link" href="#">CV</a>
-                <a class="nav-item nav-link" href="#">Twitter</a>
+                <a class="nav-item nav-link" href="{% static 'Django2-Cheat-Sheet.pdf' %}">CV</a>
             </div>
         </div>
     </nav>

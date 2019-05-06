@@ -123,7 +123,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# Assign where I place my static files, by 'collectstatic' they're automatically being copied into django static path
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'portfolio/static')
+]
+# Assign URL, where static files will be located. Could by every word you want, doesn't change anything
 STATIC_URL = '/static/'
+# Assign where django places its static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Assign path where media files will be stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

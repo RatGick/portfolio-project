@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load staticfiles %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,8 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="{% url 'motherblog'%}">Blog</a>
-                <a class="nav-item nav-link" href="#">CV</a>
-                <a class="nav-item nav-link" href="#">Twitter</a>
+                <a class="nav-item nav-link" href="{% static 'Django2-Cheat-Sheet.pdf' %}">CV</a>
             </div>
         </div>
     </nav>
@@ -58,8 +58,9 @@
             <h1 class="jumbotron-heading">Hi, I'm RatGick</h1>
             <p class="lead text-muted">Today I'm starting my first website. As you see, it's portfolio project with some
             upgrades. This site works on django and created by Bootstrap. I hope you enjoy it.</p>
+            <img src="{%static 'common-raven-2811174_960_720.png'%}" width="30%" height="30%"/>
             <p>
-                <a href="mailto:fachion.xxx@gmail.com" class="btn btn-primary my-2">Email</a>
+                <a href="mailto:fachion.xxx@gmail.com" class="btn btn-primary my-2">Email me</a>
             </p>
         </div>
     </section>
